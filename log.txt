@@ -1,0 +1,6 @@
+Fri May 26 17:51:15 2017 127.0.0.1 (5): Message  - PING
+Fri May 26 17:51:15 2017 0.0.0.0 (5): Response  - PONG
+Fri May 26 17:51:16 2017 127.0.0.1 (5): Message  - PONG
+Fri May 26 17:51:16 2017 0.0.0.0 (5): Response  - ERRO PONG reserved for server use only     
+Fri May 26 17:51:24 2017 127.0.0.1 (5): Message  - WORK 1ef2fe9f 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 1000000999999999 04
+Fri May 26 17:51:24 2017 0.0.0.0 (5): Response  - SOLN 1ef2fe9f 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 100000099999f8b6

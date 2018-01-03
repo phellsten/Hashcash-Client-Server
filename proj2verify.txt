@@ -1,0 +1,3348 @@
+============================================
+vis/phellsten.OUT
+14:50:09_Monday_22_May_2017
+============================================
+=== COMP30023 Project 2 Feedback ===
+ 
+total 56K
+drwxr-x---. 4 ss ldaemon 4.0K May 22 14:49 .
+drwxr-x---. 4 ss ldaemon 4.0K May 22 14:49 ..
+-rwx------. 1 ss ldaemon  677 May 22 14:49 Makefile
+drwxr-x---. 2 ss ldaemon 4.0K May 22 14:49 invis
+-rwx------. 1 ss ldaemon  18K May 22 14:49 server.c
+-rwx------. 1 ss ldaemon 5.6K May 22 14:49 sha256.c
+-rwx------. 1 ss ldaemon 1.3K May 22 14:49 sha256.h
+-rwx------. 1 ss ldaemon 2.8K May 22 14:49 uint256.h
+drwx------. 2 ss ldaemon 4.0K May 22 14:49 vis
+================ START RUN SCRIPT ================
+Current Working Directory: /home/ss/subrun-4000v-cis-nutmeg-l-18426/comp30023_project2/phellsten
+Submitted Files: total 48
+-rwx------. 1 ss ldaemon   677 May 22 14:49 Makefile
+drwxr-x---. 2 ss ldaemon  4096 May 22 14:49 invis
+-rwx------. 1 ss ldaemon 17578 May 22 14:49 server.c
+-rwx------. 1 ss ldaemon  5708 May 22 14:49 sha256.c
+-rwx------. 1 ss ldaemon  1293 May 22 14:49 sha256.h
+-rwx------. 1 ss ldaemon  2862 May 22 14:49 uint256.h
+drwx------. 2 ss ldaemon  4096 May 22 14:49 vis
+gcc -Wall -Wextra -std=gnu99 -g -pthread   -c -o sha256.o sha256.c
+gcc -Wall -Wextra -std=gnu99 -g -pthread   -c -o server.o server.c
+server.c: In function 'main':
+server.c:82: warning: pointer targets in passing argument 3 of 'accept' differ in signedness
+/usr/include/sys/socket.h:214: note: expected 'socklen_t * restrict' but argument is of type 'int *'
+server.c:82: warning: suggest parentheses around assignment used as truth value
+server.c:77: warning: unused variable 'pid'
+server.c:41: warning: unused variable 'n'
+server.c: In function 'interpretMessage':
+server.c:173: warning: implicit declaration of function 'inet_ntop'
+server.c:247: warning: statement with no effect
+server.c:255: warning: statement with no effect
+server.c:279: warning: statement with no effect
+server.c:328: warning: statement with no effect
+server.c:244: warning: unused variable 'ptr'
+server.c:242: warning: unused variable 'seedpos'
+server.c:458: warning: statement with no effect
+server.c:466: warning: statement with no effect
+server.c:490: warning: statement with no effect
+server.c:621: warning: statement with no effect
+server.c:454: warning: unused variable 'ptr'
+server.c:452: warning: unused variable 'seedpos'
+server.c:122: warning: unused variable 'm'
+gcc -Wall -Wextra -std=gnu99 -g -pthread -o server sha256.c server.c -lm
+server.c: In function 'main':
+server.c:82: warning: pointer targets in passing argument 3 of 'accept' differ in signedness
+/usr/include/sys/socket.h:214: note: expected 'socklen_t * restrict' but argument is of type 'int *'
+server.c:82: warning: suggest parentheses around assignment used as truth value
+server.c:77: warning: unused variable 'pid'
+server.c:41: warning: unused variable 'n'
+server.c: In function 'interpretMessage':
+server.c:173: warning: implicit declaration of function 'inet_ntop'
+server.c:247: warning: statement with no effect
+server.c:255: warning: statement with no effect
+server.c:279: warning: statement with no effect
+server.c:328: warning: statement with no effect
+server.c:244: warning: unused variable 'ptr'
+server.c:242: warning: unused variable 'seedpos'
+server.c:458: warning: statement with no effect
+server.c:466: warning: statement with no effect
+server.c:490: warning: statement with no effect
+server.c:621: warning: statement with no effect
+server.c:454: warning: unused variable 'ptr'
+server.c:452: warning: unused variable 'seedpos'
+server.c:122: warning: unused variable 'm'
+.........EE...............
+======================================================================
+ERROR: test_multi_work3 (__main__.TestMultiWorkCorrectness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "../data/test.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "../data/test.py", line 333, in test_multi_work3
+    ret = s.recv(1024)
+  File "../data/test.py", line 23, in _handle_timeout
+    raise TimeoutError(error_message)
+TimeoutError: Timer expired
+
+======================================================================
+ERROR: test_multi_work4 (__main__.TestMultiWorkCorrectness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "../data/test.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "../data/test.py", line 342, in test_multi_work4
+    ret = s.recv(1024)
+  File "../data/test.py", line 23, in _handle_timeout
+    raise TimeoutError(error_message)
+TimeoutError: Timer expired
+
+----------------------------------------------------------------------
+Ran 26 tests in 26.320s
+
+FAILED (errors=2)
+================ END RUN SCRIPT ================
+================ START STDOUT ==================
+000123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote:0011201234 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved fo1001233332222r server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'ERRO PONG reserved for server use only     
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'PONG
+'wrote: 'SOLN 1fffffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 0000000000000091
+'wrote: 'SOLN 1effffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 0000000000016827
+'wrote: 'SOLN 1fffffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 0000000000000091
+'wrote: 'SOLN 1fffffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 1000000023212605
+'wrote: 'SOLN 1fffffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 1000000023212605
+'wrote: 'SOLN 1effffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 100000002321ed8f
+'wrote: 'SOLN 1dffffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f 1000000023f6c072
+'wrote: 'SOLN 1d29ffff 0000000019d6689c085ae165831e934ff763ae46a218a6c172b3f1b60a8ce26f c40000000ce4b271
+'hash1: 0xae20a3a874e2db00ffbaab68228543c2d229014543a27918ae9b6977795335f5
+hash2: 0xa2d5c0583a074405a5725da222222================ END STDOUT ====================
+ 
+=== COMP30023 Project 2 Feedback END ===
+============================================
+src/sha256.h
+14:49:41_Monday_22_May_2017
+============================================
+/*********************************************************************
+* Filename:   sha256.h
+* Author:     Brad Conte (brad AT bradconte.com)
+* Copyright:
+* Disclaimer: This code is presented "as is" without any guarantees.
+* Details:    Defines the API for the corresponding SHA1 implementation.
+*********************************************************************/
+
+#ifndef SHA256_H_
+#define SHA256_H_
+
+/*************************** HEADER FILES ***************************/
+#include <stddef.h>
+#include "uint256.h"
+
+/****************************** MACROS ******************************/
+#define SHA256_BLOCK_SIZE 32            // SHA256 outputs a 32 byte digest
+
+/**************************** DATA TYPES ****************************/
+//typedef unsigned char BYTE;             // 8-bit byte
+typedef unsigned int  WORD;             // 32-bit word, change to "long" for 16-bit machines
+
+typedef struct {
+	BYTE data[64];
+	WORD datalen;
+	unsigned long long bitlen;
+	WORD state[8];
+} SHA256_CTX;
+
+/*********************** FUNCTION DECLARATIONS **********************/
+void sha256_init(SHA256_CTX *ctx);
+void sha256_update(SHA256_CTX *ctx, const BYTE data[], size_t len);
+void sha256_final(SHA256_CTX *ctx, BYTE hash[]);
+int sha256_compare(BYTE digest1[], BYTE digest2[]); 
+
+#endif   // SHA256_H
+============================================
+src/uint256.h
+14:49:42_Monday_22_May_2017
+============================================
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdint.h>
+#ifndef _UINT256_H_
+#define _UINT256_H_
+typedef unsigned char BYTE;
+
+static inline void uint256_init (BYTE *uint256) {
+    if (uint256 == NULL) {
+        return;
+    }
+    for (size_t i = 0; i < 32; uint256[i++] = 0);
+}
+
+static inline void print_uint256 (BYTE *uint256) {
+    printf ("0x");
+    for (size_t i = 0; i < 32; i++) {
+        printf ("%02x", uint256[i]); 
+    }
+    printf ("\n");
+}
+
+static inline void uint256_sl (BYTE *res, BYTE *a, BYTE shift) {
+    if (res == NULL || a == NULL) {
+        return;
+    }
+    BYTE b = shift / 8;
+    BYTE move_n = shift % 8;
+    BYTE mask = 0;
+    BYTE carry = 0;
+    if (shift == 0) {
+        memcpy (res, a, 32); 
+        return;
+    }
+    mask = 0xff << (8 - move_n);
+    for (int i = 31 - b, j = 31; i > -1; i--, j--) {
+        res[i] = (a[j] << move_n) | carry; 
+        carry = (a[j] & mask) >> move_n;
+    }
+}
+
+static inline void uint256_add (BYTE *res, BYTE *a, BYTE *b) {
+    if (res == NULL || a == NULL || b == NULL) {
+        return;
+    }
+    BYTE aa[32], bb[32];
+    uint256_init (aa);
+    uint256_init (bb);
+
+    memcpy (aa, a, 32);
+    memcpy (bb, b, 32);
+    uint16_t temp = 0;
+    for (size_t i = 0; i < 32; i++) {
+        temp >>= 8;
+        temp += aa[i] + bb[i];
+        res[i] = (BYTE) (temp & 0xff); 
+    }
+}
+
+static inline void uint256_mul (BYTE *res, BYTE *a, BYTE *b) {
+    if (res == NULL || a == NULL || b == NULL) {
+        return;
+    }
+    
+    BYTE temp[32], acc[32], aa[32], bb[32]; 
+    // we want to assert the invariance of a, b in the event that
+    // a == res || b == res
+    uint256_init (temp);
+    uint256_init (aa);
+    uint256_init (bb);
+    uint256_init (acc);
+ 
+    memcpy (bb, b, 32);
+    memcpy (aa, a, 32);
+   
+    for (int i = 255; i > -1; i--) {
+        if ((bb[i/8] & (1 << (7 - (i % 8)))) > 0) {
+            uint256_sl (temp, aa, 255 - i);
+            uint256_add (acc, acc, temp);
+        }
+    }
+    memcpy (res, acc, 32);
+}
+
+// we bound the exponent to 4 bytes as it is pointless to support an
+// integer greater than that, it'd simply overflow beyond 256bits.
+static inline void uint256_exp (BYTE *res, BYTE *base, uint32_t exp) {
+    if (res == NULL) {
+        return;
+    }
+    if (exp == 0) {
+        for (size_t i = 0; i < 31; res[i++] = 0);
+        res[31] = 0x1;
+        return;
+    }
+
+    BYTE temp[32], acc[32];
+    uint256_init (temp);
+    uint256_init (acc);
+
+    if (res != base) {
+        memcpy (acc, base, 32);
+    }
+   
+    temp[31] = 0x1;
+
+    while (exp > 1) {
+        if (exp % 2 == 0) {
+            uint256_mul (acc, acc, acc);
+            exp = exp / 2;
+            
+        } else {
+            uint256_mul (temp, acc, temp);
+            uint256_mul (acc, acc, acc);
+            exp = (exp - 1) / 2;
+        }
+    }
+    uint256_mul (res, acc, temp);
+}
+
+#endif============================================
+src/sha256.c
+14:49:41_Monday_22_May_2017
+============================================
+/*********************************************************************
+* Filename:   sha256.c
+* Author:     Brad Conte (brad AT bradconte.com)
+* Copyright:
+* Disclaimer: This code is presented "as is" without any guarantees.
+* Details:    Implementation of the SHA-256 hashing algorithm.
+              SHA-256 is one of the three algorithms in the SHA2
+              specification. The others, SHA-384 and SHA-512, are not
+              offered in this implementation.
+              Algorithm specification can be found here:
+               * http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf
+              This implementation uses little endian byte order.
+*********************************************************************/
+
+/*************************** HEADER FILES ***************************/
+#include <stdlib.h>
+#include <memory.h>
+#include "sha256.h"
+
+/****************************** MACROS ******************************/
+#define ROTLEFT(a,b) (((a) << (b)) | ((a) >> (32-(b))))
+#define ROTRIGHT(a,b) (((a) >> (b)) | ((a) << (32-(b))))
+
+#define CH(x,y,z) (((x) & (y)) ^ (~(x) & (z)))
+#define MAJ(x,y,z) (((x) & (y)) ^ ((x) & (z)) ^ ((y) & (z)))
+#define EP0(x) (ROTRIGHT(x,2) ^ ROTRIGHT(x,13) ^ ROTRIGHT(x,22))
+#define EP1(x) (ROTRIGHT(x,6) ^ ROTRIGHT(x,11) ^ ROTRIGHT(x,25))
+#define SIG0(x) (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3))
+#define SIG1(x) (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10))
+
+/**************************** VARIABLES *****************************/
+static const WORD k[64] = {
+	0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+	0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+	0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+	0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+	0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+	0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+	0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+	0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2
+};
+
+/*********************** FUNCTION DEFINITIONS ***********************/
+void sha256_transform(SHA256_CTX *ctx, const BYTE data[])
+{
+	WORD a, b, c, d, e, f, g, h, i, j, t1, t2, m[64];
+
+	for (i = 0, j = 0; i < 16; ++i, j += 4)
+		m[i] = (data[j] << 24) | (data[j + 1] << 16) | (data[j + 2] << 8) | (data[j + 3]);
+	for ( ; i < 64; ++i)
+		m[i] = SIG1(m[i - 2]) + m[i - 7] + SIG0(m[i - 15]) + m[i - 16];
+
+	a = ctx->state[0];
+	b = ctx->state[1];
+	c = ctx->state[2];
+	d = ctx->state[3];
+	e = ctx->state[4];
+	f = ctx->state[5];
+	g = ctx->state[6];
+	h = ctx->state[7];
+
+	for (i = 0; i < 64; ++i) {
+		t1 = h + EP1(e) + CH(e,f,g) + k[i] + m[i];
+		t2 = EP0(a) + MAJ(a,b,c);
+		h = g;
+		g = f;
+		f = e;
+		e = d + t1;
+		d = c;
+		c = b;
+		b = a;
+		a = t1 + t2;
+	}
+
+	ctx->state[0] += a;
+	ctx->state[1] += b;
+	ctx->state[2] += c;
+	ctx->state[3] += d;
+	ctx->state[4] += e;
+	ctx->state[5] += f;
+	ctx->state[6] += g;
+	ctx->state[7] += h;
+}
+
+void sha256_init(SHA256_CTX *ctx)
+{
+	ctx->datalen = 0;
+	ctx->bitlen = 0;
+	ctx->state[0] = 0x6a09e667;
+	ctx->state[1] = 0xbb67ae85;
+	ctx->state[2] = 0x3c6ef372;
+	ctx->state[3] = 0xa54ff53a;
+	ctx->state[4] = 0x510e527f;
+	ctx->state[5] = 0x9b05688c;
+	ctx->state[6] = 0x1f83d9ab;
+	ctx->state[7] = 0x5be0cd19;
+}
+
+void sha256_update(SHA256_CTX *ctx, const BYTE data[], size_t len)
+{
+	WORD i;
+
+	for (i = 0; i < len; ++i) {
+		ctx->data[ctx->datalen] = data[i];
+		ctx->datalen++;
+		if (ctx->datalen == 64) {
+			sha256_transform(ctx, ctx->data);
+			ctx->bitlen += 512;
+			ctx->datalen = 0;
+		}
+	}
+}
+
+void sha256_final(SHA256_CTX *ctx, BYTE hash[])
+{
+	WORD i;
+
+	i = ctx->datalen;
+
+	// Pad whatever data is left in the buffer.
+	if (ctx->datalen < 56) {
+		ctx->data[i++] = 0x80;
+		while (i < 56)
+			ctx->data[i++] = 0x00;
+	}
+	else {
+		ctx->data[i++] = 0x80;
+		while (i < 64)
+			ctx->data[i++] = 0x00;
+		sha256_transform(ctx, ctx->data);
+		memset(ctx->data, 0, 56);
+	}
+
+	// Append to the padding the total message's length in bits and transform.
+	ctx->bitlen += ctx->datalen * 8;
+	ctx->data[63] = ctx->bitlen;
+	ctx->data[62] = ctx->bitlen >> 8;
+	ctx->data[61] = ctx->bitlen >> 16;
+	ctx->data[60] = ctx->bitlen >> 24;
+	ctx->data[59] = ctx->bitlen >> 32;
+	ctx->data[58] = ctx->bitlen >> 40;
+	ctx->data[57] = ctx->bitlen >> 48;
+	ctx->data[56] = ctx->bitlen >> 56;
+	sha256_transform(ctx, ctx->data);
+
+	// Since this implementation uses little endian byte ordering and SHA uses big endian,
+	// reverse all the bytes when copying the final state to the output hash.
+	for (i = 0; i < 4; ++i) {
+		hash[i]      = (ctx->state[0] >> (24 - i * 8)) & 0x000000ff;
+		hash[i + 4]  = (ctx->state[1] >> (24 - i * 8)) & 0x000000ff;
+		hash[i + 8]  = (ctx->state[2] >> (24 - i * 8)) & 0x000000ff;
+		hash[i + 12] = (ctx->state[3] >> (24 - i * 8)) & 0x000000ff;
+		hash[i + 16] = (ctx->state[4] >> (24 - i * 8)) & 0x000000ff;
+		hash[i + 20] = (ctx->state[5] >> (24 - i * 8)) & 0x000000ff;
+		hash[i + 24] = (ctx->state[6] >> (24 - i * 8)) & 0x000000ff;
+		hash[i + 28] = (ctx->state[7] >> (24 - i * 8)) & 0x000000ff;
+	}
+}
+
+// ====================================================
+// compares two custom CHA256_CTX objects to see which is greater
+// return values:
+// -1, ctx1 < ctx2
+// 0, equal
+// 1, ctx1 > ctx2
+int sha256_compare(BYTE digest1[], BYTE digest2[]) 
+{
+    for (size_t i = 0; i < 32; i++) {
+        if (digest1[i] < digest2[i]) {
+            return -1;
+        } else if (digest1[i] > digest2[i]) {
+            return 1;
+        } 
+    }
+    return 0;
+}
+============================================
+src/Makefile
+14:49:41_Monday_22_May_2017
+============================================
+# 
+# Makefile for project 1 
+#
+# Simulation of swapping processes into memory
+# and scheduling them on a CPU
+#
+
+
+## CC  = Compiler.
+## CFLAGS = Compiler flags.
+CC	= gcc
+CFLAGS =	-Wall -Wextra -std=gnu99 -g -pthread
+
+
+## OBJ = Object files.
+## SRC = Source files.
+## EXE = Executable name.
+
+SRC =		sha256.c server.c
+OBJ =		sha256.o server.o
+EXE = 		server
+
+## Top level target is executable.
+$(EXE):	$(OBJ)
+		$(CC) $(CFLAGS) -o $(EXE) $(SRC) -lm
+
+
+## Clean: Remove object files and core dump files.
+clean:
+		/bin/rm $(OBJ) 
+
+## Clobber: Performs Clean and removes executable file.
+
+clobber: clean
+		/bin/rm $(EXE) 
+
+## Dependencies
+
+sha256.o:sha256.h
+server.o:uint256.h sha256.h============================================
+src/server.c
+14:49:41_Monday_22_May_2017
+============================================
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <inttypes.h>
+#include <math.h>
+#include <unistd.h>
+#include <strings.h>
+#include <pthread.h>
+#include <time.h>
+
+#include "uint256.h"
+#include "sha256.h"
+
+int numthreads = 0;
+char message[256];
+int testn = 0;
+
+FILE *f;
+time_t mytime;
+
+void *interpretMessage(void *param);
+
+int sockfd, newsockfd, portno, clilen;
+struct sockaddr_in serv_addr, cli_addr;
+char str[INET_ADDRSTRLEN];
+
+
+int main(int argc, char **argv) {
+
+	f  = fopen("log.txt", "w");
+	if (f == NULL) {
+	    printf("Error opening file!\n");
+	    exit(1);
+	}
+
+
+
+	int n;
+	if (argc < 2) {
+		//fprintf(stdout,"ERROR, no port provided\n");
+		exit(1);
+	}
+
+	 /* Create TCP socket */
+	sockfd = socket(AF_INET, SOCK_STREAM, 0);
+
+	if (sockfd < 0) {
+		//perror("ERROR opening socket");
+		exit(1);
+	}
+
+	bzero((char *) &serv_addr, sizeof(serv_addr));
+
+	portno = atoi(argv[1]);
+
+	/* Create address we're going to listen on (given port number)
+	 - converted to network byte order & any IP address for
+	 this machine */
+
+	serv_addr.sin_family = AF_INET;
+	serv_addr.sin_addr.s_addr = INADDR_ANY;
+	serv_addr.sin_port = htons(portno);  // store in machine-neutral format
+
+	 /* Bind address to the socket */
+	if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) {
+		//perror("ERROR on binding");
+		exit(1);
+	}
+
+	/* Listen on socket - means we're ready to accept connections -
+	 incoming connection requests will be queued */
+	listen(sockfd,5);
+	clilen = sizeof(cli_addr);
+	int pid;
+
+
+  //pthread_t tid[10];
+
+  while (newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen)) {
+
+    int *sockptr = malloc(sizeof(int*));
+    *sockptr = newsockfd;
+    //fprintf(stdout, "Create new thread\n");
+
+		pthread_t newthread;
+
+    if(pthread_create(&newthread, NULL, interpretMessage, (void *)sockptr)) {
+      perror("could not create thread");
+      return 1;
+    }
+
+    //pthread_join( tid[numthreads] , NULL);
+
+		//tid[numthreads] = newthread;
+    //numthreads++;
+		fprintf(stderr, "%d", numthreads);
+
+
+    //pthread_exit(NULL);
+
+  }
+
+  if (newsockfd< 0)
+    {
+        perror("accept failed");
+        return 1;
+    }
+
+  close(sockfd);
+  //exit(0);
+	fclose(f);
+  return 0;
+}
+void *interpretMessage(void *param) {
+  char buffer[256];
+  char message[256];
+	bzero(buffer, 256);
+	bzero(message, 256);
+  int n,m;
+  int newsockfd = *(int*) param;
+  int msize = 0;
+	numthreads++;
+  //fprintf(stdout, "New thread created\n");
+
+  while(1) {
+    while(1) {
+      bzero(buffer,256);
+      n = read(newsockfd,buffer,1);
+      if (n < 0){
+    		//perror("ERROR reading from socket");
+        close(newsockfd);
+        numthreads--;
+        pthread_exit(NULL);
+    		//exit(0);
+    	}
+      if(n == 0) {
+        //perror("ERROR client terminated");
+        close(newsockfd);
+        numthreads--;
+        pthread_exit(NULL);
+      }
+
+      strcat(message, buffer);
+      int msize = strlen(message);
+      //printf("%d", msize);
+
+      if(msize > 100) {
+        bzero(message, 256);
+				char response[45];
+				bzero(response, 45);
+	      strcpy(response, "ERRO Message is too long                   \r\n");
+
+				mytime = time(NULL);
+				fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+				fflush(f);
+
+        continue;
+      }
+
+      if(strncmp("\r\n", &message[msize-2], 2) == 0 ) {
+        //found a complete message
+        // lets check it out
+        break;
+
+      }
+
+    }
+    msize = strlen(message);
+
+		inet_ntop(cli_addr.sin_family, &cli_addr.sin_addr, str, INET_ADDRSTRLEN );
+		mytime = time(NULL);
+		fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, message);
+		fflush(f);
+
+
+
+    if(strncmp(message, "PING\r\n", 6) == 0) {
+      bzero(message, 256);
+      char presponse[6];
+			bzero(presponse, 6);
+			strcpy(presponse, "PONG\r\n");
+			n = write(newsockfd, presponse, 6);
+      fprintf(stdout, "wrote: '%s'", presponse);
+
+			mytime = time(NULL);
+			fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, presponse);
+			fflush(f);
+
+    }
+
+    else if(strncmp("PONG\r\n", message, 6) == 0) {
+      bzero(message, 256);
+			char response[45];
+			bzero(response, 45);
+      strcpy(response, "ERRO PONG reserved for server use only     \r\n");
+      n = write(newsockfd, response, 45);
+      fprintf(stdout, "wrote: '%s'", response);
+
+			mytime = time(NULL);
+			fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+			fflush(f);
+
+    }
+    else if(strncmp("OKAY\r\n", message, 6) == 0) {
+			bzero(message, 256);
+			char response[45];
+			bzero(response, 45);
+      strcpy(response, "ERRO it is not okay to send OKAY           \r\n");
+      n = write(newsockfd, response, 45);
+      fprintf(stdout, "wrote: '%s'", response);
+
+			mytime = time(NULL);
+			fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+			fflush(f);
+
+    }
+    else if(strncmp("ERRO\r\n", message, 6) == 0) {
+			bzero(message, 256);
+			char response[45];
+			bzero(response, 45);
+      strcpy(response, "ERRO no ERRO messages allowed              \r\n");
+      n = write(newsockfd, response, 45);
+      fprintf(stdout, "wrote: '%s'", response);
+
+			mytime = time(NULL);
+			fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+			fflush(f);
+
+    }
+    else if(strncmp("SOLN", message, 4) == 0) {
+      //msize = strlen(message);
+      //fprintf(stderr, "%d", msize);
+      if(msize == 97) {
+        uint32_t difficulty;
+        uint64_t solution;
+
+        char difficultystring[9];
+        char seedstring[65];
+        char *seedpos = seedstring;
+        char solutionstring[17];
+        char *ptr;
+        int pos = 5;
+        int i= 0;
+        for(pos; pos < 13; pos++) {
+          difficultystring[i] = message[pos];
+          i++;
+        }
+        difficultystring[i] = '\0';
+
+        i = 0;
+        pos++;
+        for(pos; pos < 78; pos++) {
+          seedstring[i] = message[pos];
+          i++;
+        }
+        seedstring[i] = '\0';
+
+
+        BYTE seed[32];
+        uint256_init(seed);
+
+
+
+        i =0;
+        int ccount = 0;
+        char buf[10];
+        for(i=0; i < 64; i+=2) {
+          sprintf(buf, "0x%c%c", seedstring[i], seedstring[i+1]);
+          seed[ccount] = strtol(buf, NULL, 0);
+          ccount++;
+        }
+
+
+        i = 0;
+        pos++;
+        for(pos; pos < 95; pos++) {
+          solutionstring[i] = message[pos];
+          i++;
+        }
+
+        solutionstring[i] = '\0';
+
+        difficulty = strtoul(difficultystring, NULL, 16);
+        solution = strtoull(solutionstring, NULL, 16);
+        uint32_t alpha, beta;
+
+        //printf("DIFFICULTY: %s", difficultystring);
+
+        alpha = difficulty;
+        alpha = difficulty >> 24;
+
+        //printf("alpha(dec, uint32): %" PRIu32 "\n", alpha);
+
+
+        beta = difficulty << 8 >> 8;
+
+        BYTE target[32];
+        uint256_init(target);
+
+        alpha -= 3;
+        alpha *= 8;
+
+        BYTE base[32];
+        uint256_init(base);
+        base[31] = 0x02;
+
+
+        //target = beta * pow(2, (8*(alpha - 3)));
+        uint256_exp(target, base, alpha);
+
+
+
+
+
+
+        BYTE concatseedsol[40];
+        for(size_t i=0; i < 32; i++) {
+          concatseedsol[i] = seed[i];
+        }
+        for(size_t i=32; i < 40; i++) {
+          concatseedsol[i] = 0;
+        }
+
+        ccount = 32;
+        buf[10];
+
+        for(i=0; i < 16; i+=2) {
+          sprintf(buf, "0x%c%c", solutionstring[i], solutionstring[i+1]);
+          concatseedsol[ccount] = strtol(buf, NULL, 0);
+          ccount++;
+        }
+
+        //printf("concatseedsol(hex BYTE[40]): ");
+        //printf("0x");
+
+        //for (size_t i = 0; i < 40; i++) {
+        //    printf ("%02x", concatseedsol[i]);
+        //}
+
+        SHA256_CTX ctx;
+        BYTE bf[SHA256_BLOCK_SIZE];
+
+
+        sha256_init(&ctx);
+        sha256_update(&ctx, concatseedsol, sizeof(concatseedsol));
+        sha256_final(&ctx, bf);
+        printf("hash1: ");
+        print_uint256(bf);
+
+        SHA256_CTX ctx2;
+        BYTE bf2[SHA256_BLOCK_SIZE];
+        sha256_init(&ctx2);
+
+
+        sha256_update(&ctx2, bf, sizeof(bf));
+        sha256_final(&ctx2, bf2);
+
+        printf("hash2: ");
+        print_uint256(bf2);
+
+
+
+        //printf("seed(hex, BYTEARRAY uint256): ");
+        //print_uint256(seed);
+
+
+        //printf("solution(hex, string): %s\n", solutionstring);
+        //printf("solution(dec, uint64): %" PRIu64 "\n", solution);
+
+        //printf("difficulty(hex, string): %s\n", difficultystring);
+        //printf("difficulty(dec, uint32): %" PRIu32 "\n", difficulty);
+
+        //printf("alpha(dec, uint32): %" PRIu32 "\n", alpha);
+        //printf("beta(dec, uint32): %" PRIu32 "\n", beta);
+        //printf("target(hex, BYTEARRAY uint256): ");
+        //print_uint256(target);
+
+
+        BYTE uint256beta[32];
+        uint256_init(uint256beta);
+
+        uint256beta[28] = (int)((beta >> 24) & 0xFF);
+        uint256beta[29] = (int)((beta >> 16) & 0xFF);
+        uint256beta[30] = (int)((beta >> 8) & 0xFF);
+        uint256beta[31] = (int)(beta & 0xFF);
+
+        printf("beta(hex): ");
+        //print_uint256(uint256beta);
+
+        uint256_mul(target, target, uint256beta);
+
+        //printf("target(hex): ");
+        //print_uint256(target);
+
+
+
+        if(sha256_compare(bf2, target) == 1) {
+					bzero(message, 256);
+					char response[45];
+					bzero(response, 45);
+		      strcpy(response, "ERRO not a valid proof of work             \r\n");
+          n = write(newsockfd, response, 45);
+          fprintf(stdout, "wrote: '%s'", response);
+
+					mytime = time(NULL);
+					fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+					fflush(f);
+
+        }
+        else {
+          bzero(message, 256);
+          char oresponse[6];
+					bzero(oresponse, 6);
+					strcpy(oresponse, "OKAY\r\n");
+          n = write(newsockfd, oresponse, 6);
+          fprintf(stdout, "wrote: '%s'", oresponse);
+
+					mytime = time(NULL);
+					fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, oresponse);
+					fflush(f);
+
+        }
+      }
+      else {
+				bzero(message, 256);
+				char response[45];
+				bzero(response, 45);
+	      strcpy(response, "ERRO malformed SOLN message                \r\n");
+        n = write(newsockfd, response, 45);
+        fprintf(stdout, "wrote: '%s'", response);
+
+				mytime = time(NULL);
+				fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+				fflush(f);
+
+      }
+
+
+
+    }
+
+    else if(strncmp("WORK", message, 4) == 0) {
+      if(msize == 100) {
+        uint32_t difficulty;
+        uint64_t solution;
+
+        char difficultystring[9];
+        char seedstring[65];
+        char *seedpos = seedstring;
+        char solutionstring[17];
+        char *ptr;
+        int pos = 5;
+        int i= 0;
+        int num_threads;
+        for(pos; pos < 13; pos++) {
+          difficultystring[i] = message[pos];
+          i++;
+        }
+        difficultystring[i] = '\0';
+
+        i = 0;
+        pos++;
+        for(pos; pos < 78; pos++) {
+          seedstring[i] = message[pos];
+          i++;
+        }
+        seedstring[i] = '\0';
+
+
+        BYTE seed[32];
+        uint256_init(seed);
+
+
+
+        i =0;
+        int ccount = 0;
+        char buf[10];
+        for(i=0; i < 64; i+=2) {
+          sprintf(buf, "0x%c%c", seedstring[i], seedstring[i+1]);
+          seed[ccount] = strtol(buf, NULL, 0);
+          ccount++;
+        }
+
+
+        i = 0;
+        pos++;
+        for(pos; pos < 95; pos++) {
+          solutionstring[i] = message[pos];
+          i++;
+        }
+
+
+
+        solutionstring[i] = '\0';
+
+
+        char threadstring[3];
+
+        i=0;
+        pos++;
+
+        threadstring[0] = message[pos];
+        threadstring[1] = message[pos+1];
+        threadstring[2] = '\0';
+
+        num_threads = atoi(threadstring);
+        //printf("num threads: %d\n", num_threads);
+
+
+        difficulty = strtoul(difficultystring, NULL, 16);
+        solution = strtoull(solutionstring, NULL, 16);
+        uint32_t alpha, beta;
+
+        //printf("DIFFICULTY: %s", difficultystring);
+
+        alpha = difficulty;
+        alpha = difficulty >> 24;
+
+        //printf("alpha(dec, uint32): %" PRIu32 "\n", alpha);
+
+
+        beta = difficulty << 8 >> 8;
+
+        BYTE target[32];
+        uint256_init(target);
+
+        alpha -= 3;
+        alpha *= 8;
+
+        BYTE base[32];
+        uint256_init(base);
+        base[31] = 0x02;
+
+
+        //target = beta * pow(2, (8*(alpha - 3)));
+        uint256_exp(target, base, alpha);
+
+        BYTE uint256beta[32];
+        uint256_init(uint256beta);
+
+        uint256beta[28] = (int)((beta >> 24) & 0xFF);
+        uint256beta[29] = (int)((beta >> 16) & 0xFF);
+        uint256beta[30] = (int)((beta >> 8) & 0xFF);
+        uint256beta[31] = (int)(beta & 0xFF);
+
+        //printf("beta(hex): ");
+        //print_uint256(uint256beta);
+
+        uint256_mul(target, target, uint256beta);
+
+        //printf("target(hex): ");
+        //print_uint256(target);
+
+
+
+        BYTE concatseedsol[40];
+        for(size_t i=0; i < 32; i++) {
+          concatseedsol[i] = seed[i];
+        }
+        for(size_t i=32; i < 40; i++) {
+          concatseedsol[i] = 0;
+        }
+
+        for(i=0; i < 16; i+=2) {
+          sprintf(buf, "0x%c%c", solutionstring[i], solutionstring[i+1]);
+          concatseedsol[ccount] = strtol(buf, NULL, 0);
+          ccount++;
+        }
+
+
+        while(1) {
+
+          //printf("%s\n", solutionstring);
+          ccount = 32;
+          bzero(buf, 10 );
+
+          SHA256_CTX ctx;
+          BYTE bf[SHA256_BLOCK_SIZE];
+          sha256_init(&ctx);
+          sha256_update(&ctx, concatseedsol, sizeof(concatseedsol));
+          sha256_final(&ctx, bf);
+          SHA256_CTX ctx2;
+          BYTE bf2[SHA256_BLOCK_SIZE];
+          sha256_init(&ctx2);
+          sha256_update(&ctx2, bf, sizeof(bf));
+          sha256_final(&ctx2, bf2);
+
+          if(sha256_compare(bf2, target) == -1) {
+            //printf("%s\n", solutionstring);
+            //printf("%s",message);
+
+            char returnmessage[97];
+            bzero(returnmessage, 97);
+            strcpy(returnmessage, message);
+            returnmessage[0] = 'S';
+            returnmessage[1] = 'O';
+            returnmessage[2] = 'L';
+            returnmessage[3] = 'N';
+
+
+            char temp[18];
+            char temp2[18];
+            bzero(temp, 16);
+            bzero(temp2, 16);
+            for(size_t i=32; i <= 40; i+=1) {
+
+              sprintf(temp, "%02x", concatseedsol[i]);
+              strcat(temp2, temp);
+              //fprintf(stderr, temp2);
+
+            }
+            temp2[16] = '\0';
+
+
+
+            pos = 79;
+            i = 0;
+            for(pos; pos < 95; pos++) {
+              returnmessage[pos] = temp2[i];
+              i++;
+            }
+
+
+
+            returnmessage[95] = '\r';
+            returnmessage[96] = '\n';
+            returnmessage[97] = '\0';
+
+            bzero(message,256);
+            n = write(newsockfd, returnmessage, 96);
+            fprintf(stdout, "wrote: '%s'", returnmessage);
+
+						mytime = time(NULL);
+						fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, returnmessage);
+						fflush(f);
+
+            break;
+
+
+          }
+
+          else {
+            //uint64_t solint = strtoull(solutionstring, NULL, 16);
+            //solint += 1;
+            //printf(": %" PRIu64 "\n", solint);
+            //printf("%s\n", solutionstring);
+
+            BYTE add[40];
+            uint256_init(base);
+            add[39] = 0x01;
+
+            BYTE aa[40], bb[40];
+            uint256_init (aa);
+            uint256_init (bb);
+
+            memcpy (aa, add, 40);
+            memcpy (bb, concatseedsol, 40);
+            uint16_t temp = 0;
+            for (int i = 39; i > 31; i--) {
+              temp >>= 8;
+              temp += aa[i];
+              temp += bb[i];
+              concatseedsol[i] = (BYTE) (temp & 0xff);
+          }
+
+
+
+            //solutionstring += 1;
+
+          }
+
+        }
+
+
+
+
+
+      }
+      else {
+        bzero(message,256);
+        char response[46] = "ERRO malformed WORK message                \r\n\0";
+        n = write(newsockfd, response, 45);
+
+				mytime = time(NULL);
+				fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+				fflush(f);
+      }
+    }
+
+
+    else {
+      bzero(message,256);
+      char response[46] = "ERRO unknown message recieved              \r\n\0";
+      n = write(newsockfd, response, 45);
+
+			mytime = time(NULL);
+			fprintf(f, "%s %s (%d): Message  - %s", ctime(&mytime), str, newsockfd, response);
+			fflush(f);
+
+    }
+
+
+    if (n < 0) {
+      //perror("ERROR writing to socket");
+      close(newsockfd);
+      numthreads--;
+      pthread_exit(NULL);
+      //exit(1);
+    }
+
+    //bzero(buffer,256);
+
+
+
+  }
+
+  numthreads--;
+  close(newsockfd);
+  pthread_exit(NULL);
+}
